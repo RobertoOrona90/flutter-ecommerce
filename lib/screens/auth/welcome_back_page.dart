@@ -1,10 +1,10 @@
-
 import 'package:ecommerce_int2/app_properties.dart';
+import 'package:ecommerce_int2/screens/shop/check_out_page.dart';
 import 'package:flutter/material.dart';
 
 import 'register_page.dart';
 
-class                            WelcomeBackPage extends StatefulWidget {
+class WelcomeBackPage extends StatefulWidget {
   @override
   _WelcomeBackPageState createState() => _WelcomeBackPageState();
 }
@@ -35,7 +35,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
     Widget subTitle = Padding(
         padding: const EdgeInsets.only(right: 56.0),
         child: Text(
-          'Inicia sesión con tu correo y contraseña',
+          'Inicia sesión con tu usuario y contraseña',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16.0,
@@ -48,7 +48,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
       child: InkWell(
         onTap: () {
           Navigator.of(context)
-              .push(MaterialPageRoute(builder: (_) => RegisterPage()));
+              .push(MaterialPageRoute(builder: (_) => CheckOutPage()));
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
@@ -149,20 +149,17 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
     );
 
     return Scaffold(
-
       body: Stack(
         children: <Widget>[
-
           Container(
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/background.jpg'),
-                  fit: BoxFit.cover)
-            ),
+                image: DecorationImage(
+                    image: AssetImage('assets/background.jpg'),
+                    fit: BoxFit.cover)),
           ),
           Container(
             decoration: BoxDecoration(
-                color: transparentYellow,
-
+              color: transparentYellow,
             ),
           ),
           Padding(

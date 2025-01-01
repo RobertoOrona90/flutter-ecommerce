@@ -26,7 +26,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
           });
         },
         value: true,
-        activeColor: yellow,
+        activeTrackColor: yellow,
       );
     } else {
       return Switch(
