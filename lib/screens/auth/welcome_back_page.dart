@@ -2,8 +2,6 @@ import 'package:ecommerce_int2/app_properties.dart';
 import 'package:ecommerce_int2/screens/shop/check_out_page.dart';
 import 'package:flutter/material.dart';
 
-import 'register_page.dart';
-
 class WelcomeBackPage extends StatefulWidget {
   @override
   _WelcomeBackPageState createState() => _WelcomeBackPageState();
@@ -33,7 +31,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
     );
 
     Widget subTitle = Padding(
-        padding: const EdgeInsets.only(right: 56.0),
+        padding: const EdgeInsets.only(right: 10.0),
         child: Text(
           'Inicia sesión con tu usuario y contraseña',
           style: TextStyle(
@@ -159,7 +157,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
           ),
           Container(
             decoration: BoxDecoration(
-              color: transparentYellow,
+              color: transparentYellow, 
             ),
           ),
           Padding(

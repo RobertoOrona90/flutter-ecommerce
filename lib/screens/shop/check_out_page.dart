@@ -4,8 +4,6 @@ import 'package:ecommerce_int2/models/product.dart';
 import 'package:ecommerce_int2/screens/address/add_address_page.dart';
 import 'package:ecommerce_int2/screens/payment/unpaid_page.dart';
 import 'package:flutter/material.dart';
-
-import 'components/credit_card.dart';
 import 'components/shop_item_list.dart';
 
 class CheckOutPage extends StatefulWidget {
@@ -106,7 +104,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 300,
+                  height: 500,
                   child: Scrollbar(
                     child: ListView.builder(
                       itemBuilder: (_, index) => ShopItemList(
@@ -121,30 +119,30 @@ class _CheckOutPageState extends State<CheckOutPage> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text(
-                    'Payment',
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: darkGrey,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-                SizedBox(
-                  height: 250,
-                  child: Swiper(
-                    itemCount: 2,
-                    itemBuilder: (_, index) {
-                      return CreditCard();
-                    },
-                    scale: 0.8,
-                    controller: swiperController,
-                    viewportFraction: 0.6,
-                    loop: false,
-                    fade: 0.7,
-                  ),
-                ),
+                // Padding(
+                //   padding: const EdgeInsets.all(16.0),
+                //   child: Text(
+                //     'Payment',
+                //     style: TextStyle(
+                //         fontSize: 20,
+                //         color: darkGrey,
+                //         fontWeight: FontWeight.bold),
+                //   ),
+                // ),
+                // SizedBox(
+                //   height: 250,
+                //   child: Swiper(
+                //     itemCount: 2,
+                //     itemBuilder: (_, index) {
+                //       return CreditCard();
+                //     },
+                //     scale: 0.8,
+                //     controller: swiperController,
+                //     viewportFraction: 0.6,
+                //     loop: false,
+                //     fade: 0.7,
+                //   ),
+                // ),
                 SizedBox(height: 24),
                 Center(
                     child: Padding(
